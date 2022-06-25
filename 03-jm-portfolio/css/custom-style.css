@@ -1,0 +1,86 @@
+
+.header_area {
+    background-image: url(../img/portfolio/top-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto 0;
+}
+
+.dream_area {
+    background-image: url(../img/portfolio/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.dream_area_text {
+    padding-left: 5em;
+}
+
+.experience {
+    background-image: url(../img/portfolio/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    
+    box-sizing: border-box;
+}
+
+.experience_box {
+    padding: 50px 20px;
+    background-color: transparent;
+    margin: 35px;
+    box-shadow: 5px 7px 40px grey;
+    border: none;
+}
+
+.experience_box:nth-child(1) {
+    border-left: 8px solid;
+    border-image: linear-gradient(180deg, rgb(255, 67, 67), rgb(88, 255, 130));
+    border-image-slice: 1;
+}
+
+.experience_box:nth-child(2) {
+    border-left: 8px solid;
+    border-image: linear-gradient(180deg, blue, cyan);
+    border-image-slice: 1;
+}
+
+.experience h2,
+.experience h5 {
+    font-weight: 400;
+    padding: 2px 0;
+}
+
+.experience h5 {
+    color: orange;
+}
+
+.experience_box p {
+    font-weight: 300;
+    color: #5c5c5c;
+}
+
+@media (max-width:420px) {
+    
+    .header_area .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .header_area .row .col-6 a img{
+        width: 100%;
+    }
+    .dream_area .container{
+        padding: 0;
+    }
+
+    .experience_box {
+        padding:25px;
+        background-color: transparent;
+        margin:25px 0px;
+        box-shadow: 5px 7px 40px grey;
+        border: none;
+        box-sizing: border-box;
+    }
+    .dream_area_text{
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,118 @@
+.navbar{
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 15px #00000011;
+}
+.navbar .container{
+    padding: 5px 0;
+}
+.navbar .logo{
+    width: 200px;
+}
+.nav{
+    text-align: right;
+}
+.nav ul {
+    list-style: none;
+}
+.nav ul li{
+    display: inline-block;
+    padding: 15px;
+}
+.nav ul li a{
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #000;
+}
+.nav ul li a.active{
+    color: #446084;
+}
+.nav ul li a:hover{
+    color: #446084;
+}
+
+.hero_area{
+    background-image: url(./img/poster/brooke-cagle.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+}
+
+.hero_area h3{
+    padding-top: 2em;
+    font-family: "Segoe Script",sans-serif;
+    font-size: 3em;
+    font-weight: 200;
+    line-height: .5em;
+}
+.hero_area h1{
+    font-family: "Poppins",sans-serif;
+    font-size: 10em;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+.hero_area h2{
+    font-family: "Poppins",sans-serif;
+    font-size: 5em;
+    font-weight: 400;
+    line-height: 1em;
+}
+.hero_btn{
+    padding-top: 2.5em;
+}
+.hero_btn a{
+    padding: 8px 15px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    margin:5px;
+    font-size: 1.5em;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.hero_btn a:hover{
+    padding: 8px 15px;
+    background-color: #fff;
+    color: #636363;
+    border: 2px solid #fff;
+    margin:5px;
+    font-size: 1.5em;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* About Area */
+.img-box{
+    height: 150px;
+    margin: 15px 0;
+    border: 1px solid #0000000e;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 10px #dedede75;
+
+}
+.img-box:hover{
+    height: 150px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 10px #dededeb9;
+}
+.box-1, .box-2, .box-3{
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.box-1{
+    background-image: url(./img/poster/blog-header03.png);
+}
+.box-2{
+    background-image: url(./img/poster/blog-header01.png);
+}
+.box-3{
+    background-image: url(./img/poster/blog-header02.png);
+}

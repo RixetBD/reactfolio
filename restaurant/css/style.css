@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.font_courgette {
+    font-family: 'Courgette', cursive;
+}
+
+/* ==============================
+Root Color CSS
+============================== */
+:root {
+    --primary: #1a253f;
+    --dark: #151a33;
+    --secondary: #2b55cc;
+    --info: #4d79f6;
+    --ternary: #848db3;
+    --pure: #eff2f9;
+    --fade: #7081b9;
+    --mild: #8997bd;
+    --footer: #212a4a;
+    --black: #060b1b;
+    --twitter: #4ac7ec;
+    --dribble: #ff5da0;
+    --success: #1ecab8;
+    --danger: #f1646c;
+    --dark-blue: #28365f;
+    --dark-gray: #171f33;
+    --yellow: #f3c74d;
+    --linkedin: #0072b1;
+    --red: #ff4040;
+    --text-tomato: #ff6347;
+}
+
+/* ==============================
+Common CSS
+============================== */
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:active,
+:focus,
+:hover {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text-tomato) !important;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+/* Navbar Logo */
+.navbar-brand img {
+    width: 120px;
+}
+
+/* ==============================
+Custom Scrolll CSS
+============================== */
+
+::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dribble);
+    border-radius: 100px;
+}
+
+/* ==============================
+Custom CSS
+============================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--linkedin);
+}
+
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+    color: var(--pure);
+    background-color: var(--red);
+    border: 2px solid var(--red);
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    padding: 5px 10px;
+    color: var(--red);
+    background-color: transparent;
+    border: 2px solid var(--red);
+    border-radius: 5px;
+    transition: background .5s ease;
+}
+
+/* ==============================
+Navigation CSS
+============================== */
+.navigation_wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 999999;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.navigation_wrap .nav-item {
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar {
+    box-shadow: 0 10px 50px 10px #00000021;
+}
+
+.navigation-wrap.scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--pure);
+    box-shadow: 0 0.125rem 1.75rem 0 rgba(0, 0, 0, 0.199);
+    transition: all .15s ease-in-out 0s;
+}
+
+
+
+.nav-item .nav-link {
+    color: #ff6347 !important;
+    position: relative;
+    margin-right: 10px;
+}
+
+.nav-item .nav-link:hover,
+.dropdown-item:hover {
+    color: var(--success) !important;
+}
+
+
+
+.nav_btn {
+    color: #fff;
+    background-color: #ff6347;
+    border: 2px solid #ff6347;
+}
+
+.nav_btn:hover {
+    color: #ff6347;
+    background-color: transparent;
+    border: 2px solid #ff6347;
+    border-radius: 5px;
+    transition: background .5s ease;
+}
+
+
+/* Dropdown CSS */
+.dropdown-menu {
+    border: none;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+header {
+    height: 100vh;
+}
+
+/* Top Banner */
+#top_banner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18vh;
+
+}
+
+#top_banner h1 {
+    font-size: 3.5rem;
+}
+
+#top_banner button {}
+
+#top_banner button:hover {}
+
+#top_banner button i {
+    padding: 0 5px;
+}
+
+/* Counter Section */
+.counter_section {
+    background-color: var(--red);
+    padding: 2.5rem 0;
+}
+
+.counter_section h2,
+.counter_section p {
+    color: var(--pure);
+}
+
+.counter_section p {
+    padding: 0;
+    margin: 0;
+}
+
+/* about_imgone */
+.about_imgone img {
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* ==============================
+Info Area CSS
+============================== */
+.info_area {
+    background-image: url(../img/bg/bloggy_area_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.info_area .container {
+    max-width: 800px;
+    padding: 30px 0;
+}
+
+.info_area .container h2,
+.info_area .container p {
+    color: var(--pure);
+}
+
+/* ==============================
+Footer CSS
+============================== */
+footer {
+    padding: 10px 0;
+}
+
+footer .social_links ul {
+    text-align: right;
+}
+
+footer .social_links ul li {
+    display: inline-block;
+    background-color: #060b1b;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+footer .social_links ul li a i {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    padding-top: 10px;
+}

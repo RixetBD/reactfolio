@@ -1,0 +1,166 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+/* Colors */
+:root {
+    --primary: #1a253f;
+    --dark: #151a33;
+    --secondary: #2b55cc;
+    --info: #4d79f6;
+    --ternary: #848db3;
+    --pure: #eff2f9;
+    --fade: #7081b9;
+    --mild: #8997bd;
+    --footer: #212a4a;
+    --black: #060b1b;
+    --twitter: #4ac7ec;
+    --dribble: #ff5da0;
+    --success: #1ecab8;
+    --danger: #f1646c;
+    --dark-blue: #28365f;
+    --dark-gray: #171f33;
+    --yellow: #f3c74d;
+    --linkedin: #0072b1;
+    --red: #ff4040;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 2.4em;
+}
+
+h5 {
+    font-size: 1.8em;
+}
+
+h6 {
+    font-size: 1.3em;
+}
+
+p {
+    font-size: 1.4em;
+    padding: 10px 0px;
+    line-height: 1.5em;
+    letter-spacing: .05em;
+}
+
+/* Container Style */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+/* For desktop: */
+.col-auto {
+    width: auto;
+}
+
+.col-1 {width: 8.33333333%;}
+.col-2 {width: 16.66666667%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33333333%;}
+.col-5 {width: 41.66666667%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33333333%;}
+.col-8 {width: 66.66666667%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33333333%;}
+.col-11 {width: 91.66666667%;}
+.col-12 {width: 100%;}
+
+
+@media (max-width:420px) {
+
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .row{
+        display: block;
+    }
+    .col-6{
+        width: 100%;
+    }
+}
+
+.text_center {
+    text-align: center;
+}
+
+.mx-auto {
+    margin: auto;
+    align-items: center;
+}
+
+.py-1 {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.py-2 {
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.my-1 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Button Style */
+.btn {
+    padding: 7px 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    padding: 7px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: 1s;
+}
+
+.btn_focus {
+    color: #fff;
+    background-image: linear-gradient(90deg, #4759ff, #ff5050);
+}
+
+
+/* Color Style */
+.text_red {
+    color: var(--red);
+}

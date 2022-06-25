@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    margin-top: 25px;
+}
+
+#fiverr_profile {
+    max-width: 350px;
+    border: 1px solid #dadbdd;
+    padding: 25px;
+}
+
+.profile_img {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+h1,
+h4,
+p {
+    margin: .25rem;
+    padding: 0;
+}
+
+.main_info {
+    position: relative;
+    margin-bottom: 15px;
+}
+.main_info h1{
+    margin: -.5rem;
+}
+
+.main_info h1 a{
+    font-size: 18px;
+    font-weight: 400;
+    color: #222325;
+    text-decoration: none;
+}
+.main_info h1 a:hover{
+    text-decoration: underline;
+}
+
+.main_info h4,
+.main_info p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #62646a;
+    letter-spacing: 1px;
+}
+
+i.fas {
+    font-size: 10px;
+    padding: 0 1px;
+}
+
+.top_icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.top_icons div:nth-child(1) {
+    text-align: left;
+}
+
+.top_icons div:nth-child(1) i {
+    padding-right: 4px;
+    color: #b5b6ba;
+}
+.top_icons div:nth-child(1) i:hover {
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.top_icons div:nth-child(2) {
+    text-align: right;
+    padding-right: 0;
+    font-size: 14px;
+}
+
+.top_icons div:nth-child(2) span {
+    font-size: 10px;
+    color: #1dbf73;
+    border: 1px solid #1dbf73;
+    padding: 0 10px;
+    border-radius: 25px;
+}
+
+.fa-flag {
+    color: #95979d;
+}
+
+.fiverr_review i {
+    color: #ffb33e;
+}
+
+/* Section Button */
+
+.contact_btn div button {
+    width: 100%;
+    padding: 3px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing:.8px;
+}
+
+.contact_btn div:nth-child(1) button {
+    color: #fff;
+    background-color: #1dbf73;
+    border: 1px solid #1dbf73;
+}
+.contact_btn div:nth-child(1) button:hover {
+    background-color: #1bab67;
+}
+
+.contact_btn div:nth-child(2) button {
+    color: #000;
+    border: 1px solid #62646a80;
+    float: right;
+}
+.contact_btn div:nth-child(2) button:hover {
+    color: #fff;
+    border: 1px solid #62646a;
+    background-color: #62646a;
+}
+table,
+tbody{
+    width: 100%;
+}
+tr td{
+    color: #62646a;
+    font-size: .80rem;
+    font-weight: 400;
+    letter-spacing: .5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+tr td:nth-child(3){
+    text-align: right;
+}

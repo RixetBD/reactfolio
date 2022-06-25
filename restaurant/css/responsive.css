@@ -1,0 +1,10 @@
+@media (max-width:576px) {
+    #top_banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .focus_img {
+        padding-bottom: 30px;
+        margin-top: -50px;
+    }
+}
